@@ -34,7 +34,7 @@ const Navbar = () => {
 
  const logoutHandle= async()=>{
   try {
-    const res = await axios.get(serverUrl + "/api/auth/logout",{withCredentials:true})
+    const res = await axios.get(`${serverUrl}/api/auth/logout`,{withCredentials:true})
     
     setuserData(null)
     console.log(res)

@@ -30,7 +30,7 @@ const Login = () => {
         e.preventDefault()
         try {
          
-         const res = await axios.post(serverUrl + "/api/auth/login",{
+         const res = await axios.post(`${serverUrl}/api/auth/login`,{
            email,
            password
          },{withCredentials:true})
