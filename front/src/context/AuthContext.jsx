@@ -3,7 +3,7 @@ import React, { Children, createContext } from 'react'
 export const authDataContext = createContext()
 
 const AuthContext = ({children}) => {
-    const serverUrl = "http://localhost:3000"
+    const serverUrl = "https://airbhb-auth-production.up.railway.app/"
     const value ={
         serverUrl
     }
